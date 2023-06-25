@@ -1,0 +1,30 @@
+.navbar {
+    background-color: #1A535C !important; /* This will be your primary color */
+}
+
+.navbar-brand {
+    color: #4ECDC4 !important; /* This will be your secondary color */
+    font-size: 2rem;
+    font-weight: 500;
+    padding-left: 1rem;
+}
+
+.navbar-nav .nav-link {
+    color: #FF6B6B !important; /* This will be your highlight color */
+}
+.nav-link{
+    padding-right: 2rem !important;
+    font-size: 1.25rem;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #F7FFF7 !important; /* This will be your hover color */
+}
+
+.navbar-nav .dropdown-item {
+    color: #4A4E69 !important; /* This will be your text color for dropdown items */
+}
+
+.navbar-nav .dropdown-item:hover {
+    color: #FF6B6B !important; /* This will be your hover color for dropdown items */
+}

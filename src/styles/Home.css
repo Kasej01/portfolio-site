@@ -1,0 +1,34 @@
+.home-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #bdc3c7;
+  }
+  
+  .about-me {
+    text-align: center;
+  }
+  
+  .about-me img {
+    width: 100px;
+    height: 100px;
+  } 
+  
+/* Styles for desktops and laptops */
+.portfolio-image {
+    width: 15vw !important;
+    height: 15vw !important;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  /* Styles for tablets and phones (viewport width up to 768px) */
+  @media only screen and (max-width: 768px) {
+    .portfolio-image {
+      width: 35vw !important;
+      height: 35vw !important;
+    }
+  }
+  
+  

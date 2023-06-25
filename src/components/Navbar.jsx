@@ -1,13 +1,14 @@
 import { Link } from 'react-router-dom';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
+import '../styles/Navbar.css';
 
 function Navigation() {
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-        <Navbar.Brand as={Link} to="/home">Navbar</Navbar.Brand>
+        <Navbar.Brand as={Link} to="/home">Kase J</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="mr-auto">
+        <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
+            <Nav>
                 <Nav.Link as={Link} to="/home">Home</Nav.Link>
                 <Nav.Link as={Link} to="/projects">Projects</Nav.Link>
                 <NavDropdown title="Certifications" id="collasible-nav-dropdown">
