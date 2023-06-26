@@ -2,15 +2,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
-    background-color: #bdc3c7;
+    padding: 0px 20px;
   }
   
   .about-me {
     text-align: center;
+    color: white;
+    text-shadow: 2px 4px 4px rgba(0, 0, 0);
+    width: 100vw;
+    height: 25vh;
   }
   
   .about-me img {
+    margin-top: 10rem;
     width: 100px;
     height: 100px;
   } 
@@ -22,9 +26,19 @@
     border-radius: 50%;
     object-fit: cover;
   }
+
+.name{
+  font-size: 4rem;
+}
+.desc{
+  font-size: 1rem;
+}
   
   /* Styles for tablets and phones (viewport width up to 768px) */
   @media only screen and (max-width: 768px) {
+    .home-page{
+      font-size: 2x;
+    }
     .portfolio-image {
       width: 35vw !important;
       height: 35vw !important;

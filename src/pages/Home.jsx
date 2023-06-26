@@ -18,8 +18,8 @@ function Home() {
     <div className="home-page">
       <div className="about-me">
         <img className="portfolio-image" src="src/images/ProfessionalPicture.jpg" alt="Portait of me" />
-        <h2>About Me</h2>
-        <p>Your about me text goes here.</p>
+        <h1 className="name">Kase Johnson</h1>
+        <p className="desc">Developer, Student, Dreamer</p>
       </div>
     </div>
   );

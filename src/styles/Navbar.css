@@ -1,30 +1,39 @@
 .navbar {
-    background-color: #1A535C !important; /* This will be your primary color */
+  margin-bottom: 0;
+  background: transparent !important;
+  width: 100%;
+  z-index: 999; /* Increase the z-index to ensure the navbar appears above the background */
 }
 
-.navbar-brand {
-    color: #4ECDC4 !important; /* This will be your secondary color */
-    font-size: 2rem;
+  
+  .navbar-brand {
+    color: #AFAFAF !important; /* Secondary color: Stardust Silver */
+    font-size: 2.5rem;
     font-weight: 500;
     padding-left: 1rem;
-}
-
-.navbar-nav .nav-link {
-    color: #FF6B6B !important; /* This will be your highlight color */
-}
-.nav-link{
-    padding-right: 2rem !important;
+  }
+  
+  .navbar-nav .nav-link {
+    color: #4A4E69  !important; /* Highlight color: Cosmic Teal */
+  }
+  
+  .nav-link {
+    margin-right: 2rem !important;
     font-size: 1.25rem;
-}
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #F7F7F7 !important; /* Hover color: Lunar White */
+  }
+  
+  .navbar-nav .dropdown-item {
+    color: #4A4E69 !important; /* Text color for dropdown items: Midnight Purple */
+  }
+  
+  .navbar-nav .dropdown-item:hover {
+    color: #F7F7F7 !important; /* Hover color for dropdown items: Cosmic Teal */
+  }
 
-.navbar-nav .nav-link:hover {
-    color: #F7FFF7 !important; /* This will be your hover color */
-}
-
-.navbar-nav .dropdown-item {
-    color: #4A4E69 !important; /* This will be your text color for dropdown items */
-}
-
-.navbar-nav .dropdown-item:hover {
-    color: #FF6B6B !important; /* This will be your hover color for dropdown items */
-}
+  .navbar-nav .active-link {
+    border-bottom: 2px solid #F7F7F7; /* Color for the underline */
+  }
