@@ -1,11 +1,16 @@
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Navigation from './components/Navbar.jsx'
+
+//Components
+import Navigation from './components/Navbar.jsx';
+import Footer from './components/Footer.jsx';
+import ParallaxBackground from './components/Parallax.jsx';
+
+//Pages
 import Home from './pages/Home.jsx'
 import Projects from './pages/Projects.jsx'
 import Contact from './pages/Contact.jsx'
 import Certification from './pages/Certification.jsx'
-import ParallaxBackground from './components/Parallax.jsx';
 
 function App() {
   return (
@@ -19,6 +24,7 @@ function App() {
         <Route path="/certifications" element={<Certification />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <Footer/>
     </Router>
   );
 }

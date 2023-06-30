@@ -19,7 +19,7 @@ function Navigation() {
             <NavDropdown.Divider />
             <NavDropdown.Item href="#action/3.3">Certification 3</NavDropdown.Item>
           </NavDropdown>
-          <Nav.Link as={Link} to="/contact" className={location.pathname === '/contact' ? 'active-link' : ''}>Contact Me</Nav.Link>
+          <Nav.Link as={Link} to="/contact" className={location.pathname === '/contact' ? 'active-link' : ''}>Contact</Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
