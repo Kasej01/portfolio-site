@@ -9,8 +9,8 @@
     text-align: center;
     color: white;
     text-shadow: 2px 4px 4px rgba(0, 0, 0);
-    width: 100vw;
-    height: 25vh;
+    width: 80vw;
+    height: 93vh;
   }
   
   .about-me img {
@@ -21,28 +21,44 @@
   
 /* Styles for desktops and laptops */
 .portfolio-image {
-    width: 15vw !important;
-    height: 15vw !important;
+    width: 20vw !important;
+    height: 20vw !important;
     border-radius: 50%;
     object-fit: cover;
   }
 
-.name{
-  font-size: 4rem;
+#name{
+  font-size: 5rem;
 }
-.desc{
-  font-size: 1rem;
+#desc{
+  font-size: 1.5rem;
+}
+
+.bio{
+  padding-top: 4rem;
+  line-height: 2.6;
+  font-size: 1.3rem;
 }
   
   /* Styles for tablets and phones (viewport width up to 768px) */
-  @media only screen and (max-width: 768px) {
-    .home-page{
-      font-size: 2x;
-    }
+  @media only screen and (max-width: 1000px) {
     .portfolio-image {
-      width: 35vw !important;
-      height: 35vw !important;
+      width: 40vw !important;
+      height: 40vw !important;
     }
   }
   
-  
+
+  /* Github section */
+  .git-sec{
+    color: white;
+    width: 80vw;
+    border-top: 2px solid white;
+    padding-top: 20px;
+    text-align: center !important;
+  }
+
+  .user-name{
+    text-decoration: none;
+    color: white;
+  }
