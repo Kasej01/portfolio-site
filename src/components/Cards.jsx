@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 import '../styles/Cards.css';
 
 const GithubCard = () => {
@@ -49,18 +50,18 @@ const GithubCard = () => {
   );
 };
 
-const ProjectCard = ({ title, description }) => (
-  <div className="card">
-    <h1 className="card-img">?</h1>
-    <h2 className="card-title">{title}</h2>
-    <p className="card-desc">{description}</p>
-  </div>
+const ProjectsCard = ({ title, description }) => (
+    <Link to="/projects" className="card">
+        <h1 className="card-img">?</h1>
+        <h2 className="card-title">{title}</h2>
+        <p className="card-desc">{description}</p>
+    </Link>
 );
 
 const ActivityCards = () => (
   <div className="cards-container">
     <GithubCard />
-    <ProjectCard title="Upcoming Project" description="This is a placeholder for my next project I will be working on" />
+    <ProjectsCard title="View All Projects" />
   </div>
 );
 
