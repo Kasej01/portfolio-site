@@ -86,16 +86,16 @@ export default function App() {
 
             <MDBCol lg='6' md='4' sm='4' className='mb-4 mb-md-0'>
               <h5 className='text-uppercase'>Contact Me</h5>
-                <form class="form-inline">
-                    <label for="emailInput">Email address</label>
-                    <div class="form-group">
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"/>
+                <form className="form-inline">
+                    <label htmlFor="emailInput">Email address</label>
+                    <div className="form-group">
+                        <input type="email" className="form-control" id="emailInput" aria-describedby="emailHelp" placeholder="Enter email"/>
                     </div>
-                    <label for="textInput">Password</label>
-                    <div class="form-group">
-                        <input type="text" class="form-control" id="textInput" placeholder="Enter your message here"/>
+                    <label htmlFor="textInput">Password</label>
+                    <div className="form-group">
+                        <input type="text" className="form-control" id="textInput" placeholder="Enter your message here"/>
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" className="btn btn-primary">Submit</button>
                 </form>
             </MDBCol>
           </MDBRow>

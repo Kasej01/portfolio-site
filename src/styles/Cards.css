@@ -1,0 +1,42 @@
+.cards-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+}
+
+.card{
+    width: 30vw;
+    height: 40vw;
+    margin: 10px;
+    text-decoration: none;
+}
+.card-desc{
+    display: none;
+}
+.card-title{
+    font-size: 1.1rem;
+}
+
+.card-img{
+    width: 15vw;
+    margin: auto;
+    font-size: 15vw;
+}
+
+@media (min-width: 850px) {
+    .card-img{
+        width: 12vw;
+        font-size: 12vw;
+    }
+    .card{
+        width: 20vw;
+        height: 25vw;
+    }
+  }
+
+  @media (min-width: 1150px) {
+    .card-desc{
+        display: block;
+    }
+  }
