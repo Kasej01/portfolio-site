@@ -1,25 +1,23 @@
-import React from 'react';
-import '../styles/Home.css'; // your custom CSS file
+import React, { useEffect, useState } from 'react';
+import ActivityCards from '../components/Cards.jsx'
+import axios from 'axios';
+import '../styles/Home.css';
+
 
 function Home() {
-  const [selectedEvent, setSelectedEvent] = React.useState(null);
-
-  const events = [
-    { month: "August", year: 2022, title: 'Started Internship at TVA', description: 'I joined Tennessee Valley Authority as a software engineering intern in early September of 2022 and am still a current employee.' },
-    { month: "December", year: 2022, title: 'Graduated from TTTU', description: 'Received my Bachelor\'s degree in computer science from Tennessee Technological University, one semester ahead of schedule.' },
-    // Add more events here...
-  ];
-
-  const handleEventClick = (event) => {
-    setSelectedEvent(event);
-  };
-
   return (
     <div className="home-page">
       <div className="about-me">
         <img className="portfolio-image" src="src/images/ProfessionalPicture.jpg" alt="Portait of me" />
-        <h2>About Me</h2>
-        <p>Your about me text goes here.</p>
+        <h1 id="name">Kase Johnson</h1>
+        <p id="desc">Developer, Student, Dreamer</p>
+        <p className="bio">Hello, world! I'm Kase Johnson, an ambitious tech enthusiast, master's degree candidate at Tennessee Technological University, 
+        and a proven software engineer as an intern at Tennessee Valley Authority (TVA).
+        Take a look around to view my accomplishments, current work, social media pages, and more.</p>
+      </div>
+      <div className="activity-sec">
+        <h2 className="activity-title">My Latest Activity</h2>
+        <ActivityCards/>
       </div>
     </div>
   );
